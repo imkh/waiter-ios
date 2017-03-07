@@ -8,7 +8,7 @@ import Foundation
 import Alamofire
 
 enum UserRouter: URLRequestConvertible {
-    static let baseURLString = "http://127.0.0.1:3000"
+    static let baseURLString = "http://127.0.0.1:5000"
     
     case Subscribe([String: AnyObject])
     case Login([String: AnyObject])
@@ -77,7 +77,7 @@ enum UserRouter: URLRequestConvertible {
             case .UserPassword(let UserID, _, _):
                 relativePath = "/user/\(UserID)/password"
             }
-            
+    
             var URL = NSURL(string: UserRouter.baseURLString)!
             if let relativePath = relativePath {
                 URL = URL.URLByAppendingPathComponent(relativePath)!

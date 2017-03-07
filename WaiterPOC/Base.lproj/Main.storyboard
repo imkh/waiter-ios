@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Login Gesture-->
+        <!--Login Controller-->
         <scene sceneID="T5v-7M-yOh">
             <objects>
-                <viewController id="4SZ-eg-ZOA" customClass="LoginGesture" customModule="Waiter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4SZ-eg-ZOA" customClass="LoginController" customModule="Waiter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aka-Kp-x5q"/>
                         <viewControllerLayoutGuide type="bottom" id="qp5-zY-UE0"/>
@@ -447,7 +447,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sm1-m6-lSz"/>
         <segue reference="6Xh-Tg-gYF"/>
+        <segue reference="f6p-Bf-xAU"/>
     </inferredMetricsTieBreakers>
 </document>

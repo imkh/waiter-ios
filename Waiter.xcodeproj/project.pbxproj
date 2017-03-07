@@ -14,11 +14,8 @@
 		4FEBE6421C8070A10039EFBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEBE6401C8070A10039EFBB /* Main.storyboard */; };
 		4FEBE6441C8070A10039EFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEBE6431C8070A10039EFBB /* Assets.xcassets */; };
 		4FEBE6521C807BD70039EFBB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBE6511C807BD70039EFBB /* SWRevealViewController.m */; };
-		4FEBE6541C807EDE0039EFBB /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBE6531C807EDE0039EFBB /* BackTableVC.swift */; };
 		4FEBE6561C808C030039EFBB /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBE6551C808C030039EFBB /* ProfileController.swift */; };
-		4FEBE6581C808CEE0039EFBB /* EventsGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBE6571C808CEE0039EFBB /* EventsGesture.swift */; };
-		4FEBE65A1C808D0A0039EFBB /* SettingsGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBE6591C808D0A0039EFBB /* SettingsGesture.swift */; };
-		4FEBE65C1C81C4690039EFBB /* LoginGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBE65B1C81C4690039EFBB /* LoginGesture.swift */; };
+		4FEBE65C1C81C4690039EFBB /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBE65B1C81C4690039EFBB /* LoginController.swift */; };
 		4FEBE65E1C81C77C0039EFBB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FEBE65D1C81C77C0039EFBB /* LaunchScreen.xib */; };
 		7D62000A1E39121200E1A844 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB1219E1E3910E4004B7897 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D7A114F1E0060C0005F8E61 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A114E1E0060C0005F8E61 /* MapKit.framework */; };
@@ -213,11 +210,8 @@
 		4FEBE64F1C807BD60039EFBB /* WaiterPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaiterPOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		4FEBE6501C807BD70039EFBB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4FEBE6511C807BD70039EFBB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		4FEBE6531C807EDE0039EFBB /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		4FEBE6551C808C030039EFBB /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		4FEBE6571C808CEE0039EFBB /* EventsGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsGesture.swift; sourceTree = "<group>"; };
-		4FEBE6591C808D0A0039EFBB /* SettingsGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsGesture.swift; sourceTree = "<group>"; };
-		4FEBE65B1C81C4690039EFBB /* LoginGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginGesture.swift; sourceTree = "<group>"; };
+		4FEBE65B1C81C4690039EFBB /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		4FEBE65D1C81C77C0039EFBB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		4FEBE6601C81C92D0039EFBB /* master_of_break.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = master_of_break.otf; sourceTree = "<group>"; };
 		4FEBE6611C81C92D0039EFBB /* master_of_break.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = master_of_break.ttf; sourceTree = "<group>"; };
@@ -307,24 +301,15 @@
 		4FEBE63B1C8070A10039EFBB /* Waiter */ = {
 			isa = PBXGroup;
 			children = (
+				7DD616861E6D557A00B2D84A /* Router */,
+				7DD616751E6D556D00B2D84A /* Controller */,
 				4FEBE63C1C8070A10039EFBB /* AppDelegate.swift */,
-				4FEBE63E1C8070A10039EFBB /* ViewController.swift */,
 				4FEBE6401C8070A10039EFBB /* Main.storyboard */,
-				4FEBE65B1C81C4690039EFBB /* LoginGesture.swift */,
-				4FEBE6571C808CEE0039EFBB /* EventsGesture.swift */,
-				4FEBE6591C808D0A0039EFBB /* SettingsGesture.swift */,
-				4FEBE6551C808C030039EFBB /* ProfileController.swift */,
-				7DB121921E390442004B7897 /* ProfileEditController.swift */,
-				4FEBE6531C807EDE0039EFBB /* BackTableVC.swift */,
 				4FEBE6431C8070A10039EFBB /* Assets.xcassets */,
 				4FEBE65D1C81C77C0039EFBB /* LaunchScreen.xib */,
 				4FEBE6481C8070A10039EFBB /* Info.plist */,
 				4FEBE65F1C81C9030039EFBB /* Ressources */,
 				4FEBE64E1C807BAA0039EFBB /* Supporting Files */,
-				7DAA255E1D9D5D84008B2222 /* UserRouter.swift */,
-				7DC830061DDEE9E2006E84C4 /* SubscribeGesture.swift */,
-				7DC2BD511DFD83FE00E4546B /* MapViewController.swift */,
-				7D904EEA1E3A2C6500EA05C2 /* NewPasswordController.swift */,
 			);
 			name = Waiter;
 			path = WaiterPOC;
@@ -407,6 +392,28 @@
 				7DC830011DDEE3EF006E84C4 /* SwiftyJSON tvOS Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7DD616751E6D556D00B2D84A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FEBE65B1C81C4690039EFBB /* LoginController.swift */,
+				4FEBE6551C808C030039EFBB /* ProfileController.swift */,
+				7DB121921E390442004B7897 /* ProfileEditController.swift */,
+				4FEBE63E1C8070A10039EFBB /* ViewController.swift */,
+				7DC830061DDEE9E2006E84C4 /* SubscribeGesture.swift */,
+				7DC2BD511DFD83FE00E4546B /* MapViewController.swift */,
+				7D904EEA1E3A2C6500EA05C2 /* NewPasswordController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7DD616861E6D557A00B2D84A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7DAA255E1D9D5D84008B2222 /* UserRouter.swift */,
+			);
+			name = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,16 +630,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FEBE65A1C808D0A0039EFBB /* SettingsGesture.swift in Sources */,
 				7DB121931E390442004B7897 /* ProfileEditController.swift in Sources */,
 				4FEBE63F1C8070A10039EFBB /* ViewController.swift in Sources */,
 				4FEBE63D1C8070A10039EFBB /* AppDelegate.swift in Sources */,
-				4FEBE6541C807EDE0039EFBB /* BackTableVC.swift in Sources */,
 				4FEBE6521C807BD70039EFBB /* SWRevealViewController.m in Sources */,
-				4FEBE65C1C81C4690039EFBB /* LoginGesture.swift in Sources */,
+				4FEBE65C1C81C4690039EFBB /* LoginController.swift in Sources */,
 				7DC830071DDEE9E2006E84C4 /* SubscribeGesture.swift in Sources */,
 				7DC2BD521DFD83FE00E4546B /* MapViewController.swift in Sources */,
-				4FEBE6581C808CEE0039EFBB /* EventsGesture.swift in Sources */,
 				4FEBE6561C808C030039EFBB /* ProfileController.swift in Sources */,
 				7DAA255F1D9D5D84008B2222 /* UserRouter.swift in Sources */,
 				7D904EEB1E3A2C6500EA05C2 /* NewPasswordController.swift in Sources */,

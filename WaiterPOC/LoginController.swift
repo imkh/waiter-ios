@@ -9,7 +9,7 @@ import Alamofire
 import SwiftyJSON
 import KeychainAccess
 
-class LoginGesture : UIViewController {
+class LoginController : UIViewController {
     
     @IBOutlet weak var Email: UITextField!
     
@@ -50,7 +50,7 @@ class LoginGesture : UIViewController {
                             print("login success");
                             print(token);
                         }
-                        if let userID = json["data"]["user"]["_id"].string{
+                        if let userID = json["data"]["user"].string{
                             self.keychain["userID"] = userID;
                             print(userID);
                         }
